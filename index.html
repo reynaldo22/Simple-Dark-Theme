@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dark theme</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+            <span class="light">LIGHT</span>
+            <div class="button"></div>
+            <span class="dark">DARK</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <a class="active" href="#" >HOME</a>
+                <a href="https://www.instagram.com/reynaldo2203/"  target="_blank">INSTAGRAM</a>
+                <a href="https://github.com/reynaldo22"  target="_blank">GITHUB</a>
+                <a href="https://reynaldodev.com"  target="_blank">WEBPAGE</a>
+            </ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(".container").on("click", () => {
+                $("body").toggleClass("dark-theme");
+            });
+        </script>
+
+  </body>
+</html>
